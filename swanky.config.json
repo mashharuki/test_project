@@ -1,0 +1,65 @@
+{
+  "node": {
+    "localPath": "/Users/harukikondo/git/Astar-BuildersWeekend/test_project/bin/swanky-node",
+    "polkadotPalletVersions": "polkadot-v0.9.27",
+    "supportedInk": "v3.3.1"
+  },
+  "accounts": [
+    {
+      "alias": "alice",
+      "mnemonic": "//Alice",
+      "isDev": true,
+      "address": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"
+    },
+    {
+      "alias": "bob",
+      "mnemonic": "//Bob",
+      "isDev": true,
+      "address": "5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty"
+    },
+    {
+      "mnemonic": "legend tide squeeze fashion gather heart cruel heavy helmet switch blue pupil",
+      "isDev": true,
+      "alias": "test_2",
+      "address": "5FLdhYX3EDXtUMSs4NMYrYLqXJ1VyttvAxHwj2PYXJHaZhHX"
+    }
+  ],
+  "contracts": {
+    "flipper": {
+      "name": "flipper",
+      "deployments": [
+        {
+          "timestamp": 1671346660649,
+          "address": "5G6D5daPHFgqph7pkbRsz5GiPW7ZNqUNffk6ixe1pKxUaeSj",
+          "networkUrl": "ws://127.0.0.1:9944",
+          "deployerAlias": "alice"
+        },
+        {
+          "timestamp": 1671347749839,
+          "address": "WVLMRqYtaqqv5wiEonHnH8LMXv7TJujF4qMLQz2ncnAcZxt",
+          "networkUrl": "wss://rpc.shibuya.astar.network",
+          "deployerAlias": "test_2"
+        }
+      ],
+      "language": "ink",
+      "build": {
+        "timestamp": 1671346370187,
+        "artifactsPath": "/Users/harukikondo/git/Astar-BuildersWeekend/test_project/artifacts/flipper/1671346370187"
+      }
+    }
+  },
+  "networks": {
+    "local": {
+      "url": "ws://127.0.0.1:9944"
+    },
+    "astar": {
+      "url": "wss://rpc.astar.network"
+    },
+    "shiden": {
+      "url": "wss://rpc.shiden.astar.network"
+    },
+    "shibuya": {
+      "url": "wss://rpc.shibuya.astar.network"
+    }
+  }
+}
