@@ -26,6 +26,7 @@ mod flipper {
         /// Constructors can delegate to other constructors.
         #[ink(constructor)]
         pub fn default() -> Self {
+            // デフォルト値を設定する。
             Self::new(Default::default())
         }
 
@@ -48,6 +49,7 @@ mod flipper {
     /// Unit tests in Rust are normally defined within such a `#[cfg(test)]`
     /// module and test functions are marked with a `#[test]` attribute.
     /// The below code is technically just normal Rust code.
+    /// 静的テストコード
     #[cfg(test)]
     mod tests {
         /// Imports all the definitions from the outer scope so we can use them here.
